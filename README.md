@@ -1,7 +1,18 @@
-# Production Toolkit Reference
+# Production Toolkit
 
 Curated frameworks, libraries, and tools for shipping high-quality projects fast.
+Built for developers and AI coding assistants who want to stop building sites that all look the same.
+
 Last updated: 2026-04-22.
+
+## What's In This Repo
+
+| File | Purpose |
+|------|---------|
+| [README.md](README.md) | The parts catalog -- every framework, library, and tool worth using, organized by category |
+| [AI-INSTRUCTIONS.md](AI-INSTRUCTIONS.md) | How AI should use this toolkit -- decision frameworks, anti-patterns, quality checklists, and the rules that separate professional output from generic template slop |
+
+Drop both files into any project root. The AI reads them and knows what to pick, how to use it, and what to avoid.
 
 ---
 
