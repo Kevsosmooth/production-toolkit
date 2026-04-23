@@ -10,9 +10,10 @@ Last updated: 2026-04-22.
 | File | Purpose |
 |------|---------|
 | [README.md](README.md) | The parts catalog -- every framework, library, and tool worth using, organized by category |
-| [AI-INSTRUCTIONS.md](AI-INSTRUCTIONS.md) | How AI should use this toolkit -- decision frameworks, anti-patterns, quality checklists, and the rules that separate professional output from generic template slop |
+| [AI-INSTRUCTIONS.md](AI-INSTRUCTIONS.md) | How AI should use this toolkit -- decision frameworks, anti-patterns, quality checklists, and the philosophy that separates professional output from generic template slop |
+| [RULES.md](RULES.md) | Universal project rules for AI assistants -- phase discipline, simplicity gatekeeping, frontend quality, security, testing, context management. Drop into any project root. |
 
-Drop both files into any project root. The AI reads them and knows what to pick, how to use it, and what to avoid.
+Drop these files into any project root. The AI reads them and knows what to pick, how to build with it, and what to avoid.
 
 ---
 
