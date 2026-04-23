@@ -12,8 +12,14 @@ Last updated: 2026-04-22.
 | [README.md](README.md) | The parts catalog -- every framework, library, and tool worth using, organized by category |
 | [AI-INSTRUCTIONS.md](AI-INSTRUCTIONS.md) | How AI should use this toolkit -- decision frameworks, anti-patterns, quality checklists, and the philosophy that separates professional output from generic template slop |
 | [RULES.md](RULES.md) | Universal project rules for AI assistants -- phase discipline, simplicity gatekeeping, frontend quality, security, testing, context management. Drop into any project root. |
+| [DESIGN.md](DESIGN.md) | Fillable design system template -- YAML tokens + prose rationale. Compatible with Google/Stitch spec. Covers colors, typography, spacing, elevation, components (with all states), responsive behavior, motion, accessibility, SEO, and security headers. |
 
-Drop these files into any project root. The AI reads them and knows what to pick, how to build with it, and what to avoid.
+### How to Use
+
+1. Copy all four files into your project root
+2. Fill in `DESIGN.md` with your project's actual design values (replace every `<PLACEHOLDER>`)
+3. The AI reads the files in order: `DESIGN.md` (how it looks) > `RULES.md` (how to behave) > `AI-INSTRUCTIONS.md` (how to decide) > `README.md` (what tools exist)
+4. Run `npx @google/design.md lint DESIGN.md` to validate tokens and WCAG contrast
 
 ---
 
