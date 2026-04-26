@@ -278,7 +278,6 @@ Not code -- these are galleries of real shipped websites to study before you sta
 |------|-------------|-----|
 | **Biome** (24k stars) | Rust-based formatter + linter. 10-100x faster than Prettier + ESLint. | [biomejs.dev](https://biomejs.dev) |
 | **Turborepo** (30k stars) | Monorepo build system with remote caching. Only changed packages rebuild. | [turbo.build](https://turbo.build) |
-| **Vercel AI SDK** (24k stars) | TypeScript toolkit for LLM-powered apps. Streaming, tool calling, multi-provider. | [sdk.vercel.ai](https://sdk.vercel.ai) |
 | **Trigger.dev** (15k stars) | Type-safe background jobs and AI workflows. Replaces cron + queue infra. | [trigger.dev](https://trigger.dev) |
 | **cmdk** (13k stars) | Unstyled command palette component. Powers cmd+K in most React apps. | [cmdk.paco.me](https://cmdk.paco.me) |
 | **Sonner** (12k stars) | Opinionated toast notifications. One import, instant polish. Default in shadcn/ui. | [sonner.emilkowal.ski](https://sonner.emilkowal.ski) |
@@ -296,83 +295,6 @@ Not code -- these are galleries of real shipped websites to study before you sta
 | **Dokploy** (33k stars) | Open-source PaaS alternative to Vercel/Heroku. Simpler than Coolify. | [dokploy.com](https://dokploy.com) |
 | **Dokku** (31k stars) | Docker-powered mini-Heroku. Single-server PaaS. | [dokku.com](https://dokku.com) |
 | **Bun** (89k stars) | JS runtime, bundler, test runner, package manager. 3-5x faster than Node. | [bun.sh](https://bun.sh) |
-
----
-
-## AI and LLM Tools
-
-| Tool | What It Does | URL |
-|------|-------------|-----|
-| **Vercel AI SDK** (24k stars) | TypeScript toolkit for LLM-powered apps. Streaming, tool calling, multi-provider. | [sdk.vercel.ai](https://sdk.vercel.ai) |
-| **Dify** (139k stars) | Visual agentic workflow platform. Build LLM apps with drag-and-drop. | [dify.ai](https://dify.ai) |
-| **LangChain** (135k stars) | The agent engineering framework. Python and JS. | [langchain.com](https://www.langchain.com) |
-| **Open WebUI** (134k stars) | Self-hosted ChatGPT-style UI for local LLMs (Ollama, OpenAI API). | [openwebui.com](https://openwebui.com) |
-| **Ollama** (120k+ stars) | Run LLMs locally. One command to download and run any model. | [ollama.com](https://ollama.com) |
-| **ComfyUI** (110k stars) | Node-based Stable Diffusion UI. The image generation powerhouse. | [github.com/Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) |
-| **Firecrawl** (112k stars) | API to search, scrape, and interact with the web for AI pipelines. | [firecrawl.dev](https://www.firecrawl.dev) |
-| **Browser Use** (90k stars) | Let AI agents browse the web autonomously. | [github.com/browser-use/browser-use](https://github.com/browser-use/browser-use) |
-| **OpenHands** (72k stars) | AI-driven development agent. Open-source Devin alternative. | [github.com/OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) |
-| **LlamaFactory** (70k stars) | Fine-tune 100+ LLMs with a unified interface. | [github.com/hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) |
-| **Crawl4AI** (64k stars) | LLM-friendly web scraper. Converts pages to clean markdown. | [github.com/unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) |
-| **MarkItDown** (117k stars) | Convert any file or office document to Markdown. By Microsoft. | [github.com/microsoft/markitdown](https://github.com/microsoft/markitdown) |
-
----
-
-## DevOps and Infrastructure
-
-| Tool | What It Does | URL |
-|------|-------------|-----|
-| **act** (70k stars) | Run GitHub Actions locally. Test workflows without pushing. | [github.com/nektos/act](https://github.com/nektos/act) |
-| **Netdata** (78k stars) | Real-time infrastructure monitoring with AI-powered insights. | [netdata.cloud](https://www.netdata.cloud) |
-| **Sentry** (43k stars) | Error tracking and performance monitoring for any stack. | [sentry.io](https://sentry.io) |
-| **Watchtower** (24k stars) | Auto-update Docker containers when new images are pushed. | [github.com/containrrr/watchtower](https://github.com/containrrr/watchtower) |
-| **Argo CD** (22k stars) | GitOps continuous deployment for Kubernetes. | [argoproj.github.io/cd](https://argoproj.github.io/cd/) |
-| **SOPS** (21k stars) | Secrets management for config files. Encrypt values in YAML/JSON. | [github.com/getsops/sops](https://github.com/getsops/sops) |
-| **Kestra** (26k stars) | Event-driven orchestration and scheduling. Visual workflow builder. | [kestra.io](https://kestra.io) |
-| **n8n** (185k stars) | Fair-code workflow automation with native AI. Visual Zapier alternative. | [n8n.io](https://n8n.io) |
-
----
-
-## Self-Hosted Essentials
-
-Tools the Reddit r/selfhosted community (1M+ members) swears by.
-
-| Tool | What It Does | URL |
-|------|-------------|-----|
-| **Immich** (98k stars) | Self-hosted Google Photos replacement. Face recognition, mobile app, sharing. | [immich.app](https://immich.app) |
-| **Uptime Kuma** (85k stars) | Fancy self-hosted monitoring. Beautiful dashboard, notifications. | [github.com/louislam/uptime-kuma](https://github.com/louislam/uptime-kuma) |
-| **Stirling-PDF** (77k stars) | All-in-one PDF toolkit. Merge, split, convert, OCR, watermark. Self-hosted. | [github.com/Stirling-Tools/Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) |
-| **Paperless-NGX** (25k+ stars) | Scan, index, and archive all your physical documents. OCR + tagging. | [docs.paperless-ngx.com](https://docs.paperless-ngx.com) |
-| **Jellyfin** (40k+ stars) | Media server. Plex alternative that is actually free. | [jellyfin.org](https://jellyfin.org) |
-| **Syncthing** (70k+ stars) | P2P file sync. No cloud, no accounts, no limits. | [syncthing.net](https://syncthing.net) |
-| **Home Assistant** (80k+ stars) | Smart home automation hub. Local control, privacy first. | [home-assistant.io](https://www.home-assistant.io) |
-| **Dockge** (16k+ stars) | Simple Docker Compose management UI. By the Uptime Kuma developer. | [github.com/louislam/dockge](https://github.com/louislam/dockge) |
-| **Reactive Resume** (36k stars) | Privacy-first resume builder. No tracking, fully self-hostable. | [rxresu.me](https://rxresu.me) |
-| **TriliumNext** (35k stars) | Personal knowledge base. Notion alternative, self-hosted, hierarchical notes. | [github.com/TriliumNext/Trilium](https://github.com/TriliumNext/Trilium) |
-| **LocalSend** (60k+ stars) | AirDrop for all platforms. Send files to nearby devices over local network. | [localsend.org](https://localsend.org) |
-| **Bitwarden / Vaultwarden** | Password manager. Vaultwarden is the lightweight self-hosted server. | [bitwarden.com](https://bitwarden.com) |
-
----
-
-## Communication (Self-Hosted)
-
-| Tool | What It Does | URL |
-|------|-------------|-----|
-| **Matrix / Element** | Federated encrypted chat. The #1 community pick for Discord replacement. | [element.io](https://element.io) |
-| **Mattermost** (32k stars) | Open-source Slack alternative. Team chat with channels, threads, integrations. | [mattermost.com](https://mattermost.com) |
-| **Zulip** (22k stars) | Threaded team chat. Best threading model of any chat tool. | [zulip.com](https://zulip.com) |
-| **Mumble** | Open-source voice chat. TeamSpeak alternative, own your voice data. | [mumble.info](https://www.mumble.info) |
-| **Rocket.Chat** (45k stars) | Feature-rich team chat. Self-hostable. Free tier caps at 50 users. | [rocket.chat](https://rocket.chat) |
-
----
-
-## Backend Platforms
-
-| Tool | What It Does | URL |
-|------|-------------|-----|
-| **Appwrite** (55k stars) | Backend-as-a-service. Auth, database, storage, functions, messaging. Firebase alternative. | [appwrite.io](https://appwrite.io) |
-| **OpenBB** (66k stars) | Financial data platform for analysts, quants, and AI agents. | [openbb.co](https://openbb.co) |
-| **Daytona** (72k stars) | Secure infrastructure for running AI-generated code. Dev environments. | [daytona.io](https://www.daytona.io) |
 
 ---
 
@@ -448,27 +370,12 @@ Awesome lists and reference repos to bookmark. Open any of these when you need i
 | **open-color** | 5.5k | Open-source color scheme optimized for UI design. | [github.com/yeun/open-color](https://github.com/yeun/open-color) |
 | **css-protips** | 30k | CSS tips for color contrast, custom properties, layout. | [github.com/AllThingsSmitty/css-protips](https://github.com/AllThingsSmitty/css-protips) |
 
-### AI and LLM Tools
-
-| Resource | Stars | What It Is | URL |
-|----------|-------|-----------|-----|
-| **awesome-llm-apps** | 107k | 100+ AI Agent and RAG apps you can clone and ship. | [github.com/Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) |
-| **awesome-mcp-servers** | 85k | MCP servers for Claude and AI assistants. | [github.com/punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) |
-| **awesome-ai-coding-tools** | 1.7k | AI-powered coding tools: copilots, code review, test gen. | [github.com/ai-for-developers/awesome-ai-coding-tools](https://github.com/ai-for-developers/awesome-ai-coding-tools) |
-
 ### Free APIs and Resources
 
 | Resource | Stars | What It Is | URL |
 |----------|-------|-----------|-----|
 | **public-apis** | 426k | The largest list of free APIs for building apps. | [github.com/public-apis/public-apis](https://github.com/public-apis/public-apis) |
 | **frontend-dev-bookmarks** | 47k | Manually curated resources for frontend developers. | [github.com/dypsilon/frontend-dev-bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) |
-
-### Open Source Alternatives
-
-| Resource | Stars | What It Is | URL |
-|----------|-------|-----------|-----|
-| **awesome-oss-alternatives** | 19k | Open-source alternatives to popular SaaS products. | [github.com/RunaCapital/awesome-oss-alternatives](https://github.com/RunaCapital/awesome-oss-alternatives) |
-| **awesome-selfhosted** | 288k | Free software and web apps you can self-host. | [github.com/awesome-selfhosted/awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) |
 
 ### Checklists and Standards
 
@@ -479,9 +386,3 @@ Awesome lists and reference repos to bookmark. Open any of these when you need i
 | **HEAD** | 30k | Guide to everything in the HTML `<head>`: meta, OG, Twitter, CSP, PWA. | [github.com/joshbuchea/HEAD](https://github.com/joshbuchea/HEAD) |
 | **awesome-guidelines** | 11k | High-quality coding style conventions and standards. | [github.com/Kristories/awesome-guidelines](https://github.com/Kristories/awesome-guidelines) |
 
-### Meta
-
-| Resource | Stars | What It Is | URL |
-|----------|-------|-----------|-----|
-| **awesome** | 458k | The master list of all awesome lists on GitHub. Start here. | [github.com/sindresorhus/awesome](https://github.com/sindresorhus/awesome) |
-| **the-book-of-secret-knowledge** | 217k | Lists, manuals, cheatsheets, blogs, hacks, CLI/web tools, and more. | [github.com/trimstray/the-book-of-secret-knowledge](https://github.com/trimstray/the-book-of-secret-knowledge) |
