@@ -3,7 +3,7 @@
 Curated frameworks, libraries, and tools for shipping high-quality projects fast.
 Built for developers and AI coding assistants who want to stop building sites that all look the same.
 
-Last updated: 2026-04-22.
+Last updated: 2026-04-26.
 
 ## What's In This Repo
 
@@ -20,6 +20,90 @@ Last updated: 2026-04-22.
 2. Fill in `DESIGN.md` with your project's actual design values (replace every `<PLACEHOLDER>`)
 3. The AI reads the files in order: `DESIGN.md` (how it looks) > `RULES.md` (how to behave) > `AI-INSTRUCTIONS.md` (how to decide) > `README.md` (what tools exist)
 4. Run `npx @google/design.md lint DESIGN.md` to validate tokens and WCAG contrast
+
+---
+
+## Visual Galleries (Browse Before You Build)
+
+Stop coding from imagination. Open these sites, browse visually, find what you like, then build.
+
+### Copy-Paste Component Galleries
+
+Live previews where you click a component, see it running, and grab the code.
+
+| Gallery | What You Browse | URL |
+|---------|----------------|-----|
+| **shadcn/ui Blocks** | Full page layouts -- dashboards, login, settings, music player, mail client. Copy the whole page. | [ui.shadcn.com/blocks](https://ui.shadcn.com/blocks) |
+| **Magic UI** | Animated sections -- shimmer cards, particle heroes, glow effects, cursor trails. Tailwind + Framer Motion. | [magicui.design](https://magicui.design) |
+| **Aceternity UI** | High-impact landing page sections -- 3D cards, spotlight effects, animated gradients, typewriter text. | [ui.aceternity.com](https://ui.aceternity.com) |
+| **21st.dev** | Marketplace of designer-made shadcn blocks -- hero sections, pricing tables, feature grids, footers. Filter by category. | [21st.dev](https://21st.dev) |
+| **React Bits** (38k stars) | Animated interactive React components with live demos -- text effects, animations, backgrounds, buttons. | [reactbits.dev](https://reactbits.dev) |
+| **Flowbite** (9.2k stars) | 600+ Tailwind components with visual docs -- navbars, forms, modals, cards, dropdowns, tables. | [flowbite.com](https://flowbite.com) |
+| **Preline UI** (6.3k stars) | Large Tailwind component set with live previews -- layouts, overlays, navigation, data display. | [preline.co](https://preline.co) |
+| **TW Elements** (13k stars) | 500+ Tailwind components -- carousels, accordions, timelines, charts, steppers. All previewable. | [tw-elements.com](https://tw-elements.com) |
+| **Float UI** (3.5k stars) | Beautiful responsive sections for React + Tailwind -- hero, features, pricing, CTA, testimonials. | [floatui.com](https://floatui.com) |
+| **Meraki UI** (2.7k stars) | Clean Tailwind components with RTL support. Visual gallery with code toggle. | [merakiui.com](https://merakiui.com) |
+| **Inspira UI** (4.6k stars) | Vue/Nuxt component library with animated previews. | [inspira-ui.com](https://inspira-ui.com) |
+| **Creative Tim** (11.8k stars) | Open-source blocks, page sections, and full templates. Import into any project. | [creative-tim.com](https://www.creative-tim.com) |
+| **Pattern Craft** (2.8k stars) | Background patterns and gradients -- visual gallery, copy the CSS. | [github.com/megh-bari/pattern-craft](https://github.com/megh-bari/pattern-craft) |
+| **Fancy** (2.8k stars) | Animated component collection -- text reveals, transitions, scroll effects. Visual previews. | [fancy.dev](https://fancy.dev) |
+| **Motion Primitives** (5.5k stars) | Subtle, design-forward animated UI kit. Higher taste than Magic UI. | [motion-primitives.com](https://motion-primitives.com) |
+
+### Full Admin & Dashboard Templates
+
+Complete working apps you can clone and run. Browse the live demo, then fork.
+
+| Template | Stars | What You Get | URL |
+|----------|-------|-------------|-----|
+| **shadcn-admin** | 11.8k | Full admin dashboard -- sidebar nav, charts, data tables, auth pages, dark mode. Live demo. | [github.com/satnaing/shadcn-admin](https://github.com/satnaing/shadcn-admin) |
+| **next-shadcn-dashboard-starter** | 6.3k | Next.js 16 + shadcn admin with tables, forms, charts, Kanban board. | [github.com/Kiranism/next-shadcn-dashboard-starter](https://github.com/Kiranism/next-shadcn-dashboard-starter) |
+| **TailAdmin** | 2k | Free Tailwind dashboard with 200+ UI components. | [github.com/TailAdmin/tailadmin-free-tailwind-dashboard-template](https://github.com/TailAdmin/tailadmin-free-tailwind-dashboard-template) |
+| **Vue Vben Admin** | 32k | Full Vue3 admin panel with shadcn + Vite. Production-ready. | [github.com/vbenjs/vue-vben-admin](https://github.com/vbenjs/vue-vben-admin) |
+| **shadcn-admin-kit** | -- | React-admin framework for admin SPAs with shadcn components. | [github.com/marmelab/shadcn-admin-kit](https://github.com/marmelab/shadcn-admin-kit) |
+
+### SaaS Boilerplates (Full Apps You Can See Running)
+
+Start a SaaS project with auth, payments, email, and dashboard already built.
+
+| Boilerplate | Stars | Stack | URL |
+|------------|-------|-------|-----|
+| **Next.js SaaS Starter** | 15.7k | Next.js + Postgres + Stripe + shadcn. Official Vercel starter. | [github.com/nextjs/saas-starter](https://github.com/nextjs/saas-starter) |
+| **Open SaaS** | 14.2k | 100% free. Auth, payments, email, analytics, blog, admin. React + Node + Prisma. | [github.com/wasp-lang/open-saas](https://github.com/wasp-lang/open-saas) |
+| **SaaS Boilerplate** | 7k | Next.js + Tailwind + shadcn + TypeScript. Full-stack with i18n, email, monitoring. | [github.com/ixartz/SaaS-Boilerplate](https://github.com/ixartz/SaaS-Boilerplate) |
+| **Invoify** | 6.2k | Invoice generator -- good example of a polished Next.js + shadcn production app. | [github.com/al1abb/invoify](https://github.com/al1abb/invoify) |
+
+### Visual Theme Editors
+
+Tweak designs live in the browser -- adjust colors, spacing, radii and see changes instantly.
+
+| Tool | Stars | What It Does | URL |
+|------|-------|-------------|-----|
+| **tweakcn** | 9.7k | Visual no-code theme editor for shadcn/ui. Drag sliders, see components update live. | [tweakcn.com](https://tweakcn.com) |
+| **Puck** | 6k+ | Drag-and-drop visual page editor for React. MIT licensed. | [github.com/measuredco/puck](https://github.com/measuredco/puck) |
+
+### Design Inspiration (Look, Then Build)
+
+Not code -- these are galleries of real shipped websites to study before you start.
+
+| Site | What You Browse | URL |
+|------|----------------|-----|
+| **Godly** | Curated high-quality web design. Filterable by style, color, industry. | [godly.website](https://godly.website) |
+| **Land-book** | Landing page gallery. Filter by color, style, industry. | [land-book.com](https://land-book.com) |
+| **Mobbin** | Real app and web UI. Filter by industry, screen type, and UI pattern. Best for studying how real products handle specific flows. | [mobbin.com](https://mobbin.com) |
+| **SiteInspire** | Design-focused gallery of real websites. | [siteinspire.com](https://siteinspire.com) |
+| **One Page Love** | Curated one-page websites. Great for portfolios and landing pages. | [onepagelove.com](https://onepagelove.com) |
+| **Httpster** | Clean, minimal, well-designed sites. | [httpster.net](https://httpster.net) |
+| **Codrops** | Experimental CSS/JS techniques with tutorials. | [tympanus.net/codrops](https://tympanus.net/codrops) |
+| **maxibestof** | Filterable by fonts used -- find sites using the typeface you chose. | [maxibestof.one](https://maxibestof.one) |
+| **Dribbble** | Designer portfolios and UI concepts. Good for color and layout ideas, not for copying wholesale. | [dribbble.com](https://dribbble.com) |
+
+### The Workflow
+
+1. **Browse inspiration** (Godly, Land-book, Mobbin) -- find the vibe
+2. **Pick components** (shadcn Blocks, Magic UI, Aceternity, 21st.dev) -- grab the pieces
+3. **Customize the theme** (tweakcn) -- make it yours
+4. **Reference the toolkit** (this README) -- pick the right libraries
+5. **Follow the rules** (RULES.md, AI-INSTRUCTIONS.md) -- ship it clean
 
 ---
 
@@ -124,6 +208,7 @@ Last updated: 2026-04-22.
 | **Auth.js / NextAuth v5** (28k stars) | Authentication for Next.js. 70+ OAuth providers, credentials, magic links. Free, self-hosted. | [authjs.dev](https://authjs.dev) |
 | **Clerk** | Complete user management platform. Pre-built UI, org/team support, MFA. | [clerk.com](https://clerk.com) |
 | **Lucia** (11k stars) | Minimal auth library. Thin abstraction over sessions and cookies. Full control. | [lucia-auth.com](https://lucia-auth.com) |
+| **Stack Auth** (6.7k stars) | Open-source Auth0/Clerk alternative. Self-hostable, full-featured. | [github.com/stack-auth/stack-auth](https://github.com/stack-auth/stack-auth) |
 
 ---
 
@@ -207,7 +292,87 @@ Last updated: 2026-04-22.
 |------|-------------|-----|
 | **Vercel** | Zero-config deploys for Next.js. Edge Network, preview URLs per PR. | [vercel.com](https://vercel.com) |
 | **Cloudflare Workers/Pages** | Edge-first serverless compute. 0ms cold starts. Competitive free tier. | [workers.cloudflare.com](https://workers.cloudflare.com) |
+| **Coolify** (54k stars) | Self-hosted Vercel/Heroku/Netlify alternative. Deploy anything with Docker. | [coolify.io](https://coolify.io) |
+| **Dokploy** (33k stars) | Open-source PaaS alternative to Vercel/Heroku. Simpler than Coolify. | [dokploy.com](https://dokploy.com) |
+| **Dokku** (31k stars) | Docker-powered mini-Heroku. Single-server PaaS. | [dokku.com](https://dokku.com) |
 | **Bun** (89k stars) | JS runtime, bundler, test runner, package manager. 3-5x faster than Node. | [bun.sh](https://bun.sh) |
+
+---
+
+## AI and LLM Tools
+
+| Tool | What It Does | URL |
+|------|-------------|-----|
+| **Vercel AI SDK** (24k stars) | TypeScript toolkit for LLM-powered apps. Streaming, tool calling, multi-provider. | [sdk.vercel.ai](https://sdk.vercel.ai) |
+| **Dify** (139k stars) | Visual agentic workflow platform. Build LLM apps with drag-and-drop. | [dify.ai](https://dify.ai) |
+| **LangChain** (135k stars) | The agent engineering framework. Python and JS. | [langchain.com](https://www.langchain.com) |
+| **Open WebUI** (134k stars) | Self-hosted ChatGPT-style UI for local LLMs (Ollama, OpenAI API). | [openwebui.com](https://openwebui.com) |
+| **Ollama** (120k+ stars) | Run LLMs locally. One command to download and run any model. | [ollama.com](https://ollama.com) |
+| **ComfyUI** (110k stars) | Node-based Stable Diffusion UI. The image generation powerhouse. | [github.com/Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) |
+| **Firecrawl** (112k stars) | API to search, scrape, and interact with the web for AI pipelines. | [firecrawl.dev](https://www.firecrawl.dev) |
+| **Browser Use** (90k stars) | Let AI agents browse the web autonomously. | [github.com/browser-use/browser-use](https://github.com/browser-use/browser-use) |
+| **OpenHands** (72k stars) | AI-driven development agent. Open-source Devin alternative. | [github.com/OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) |
+| **LlamaFactory** (70k stars) | Fine-tune 100+ LLMs with a unified interface. | [github.com/hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) |
+| **Crawl4AI** (64k stars) | LLM-friendly web scraper. Converts pages to clean markdown. | [github.com/unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) |
+| **MarkItDown** (117k stars) | Convert any file or office document to Markdown. By Microsoft. | [github.com/microsoft/markitdown](https://github.com/microsoft/markitdown) |
+
+---
+
+## DevOps and Infrastructure
+
+| Tool | What It Does | URL |
+|------|-------------|-----|
+| **act** (70k stars) | Run GitHub Actions locally. Test workflows without pushing. | [github.com/nektos/act](https://github.com/nektos/act) |
+| **Netdata** (78k stars) | Real-time infrastructure monitoring with AI-powered insights. | [netdata.cloud](https://www.netdata.cloud) |
+| **Sentry** (43k stars) | Error tracking and performance monitoring for any stack. | [sentry.io](https://sentry.io) |
+| **Watchtower** (24k stars) | Auto-update Docker containers when new images are pushed. | [github.com/containrrr/watchtower](https://github.com/containrrr/watchtower) |
+| **Argo CD** (22k stars) | GitOps continuous deployment for Kubernetes. | [argoproj.github.io/cd](https://argoproj.github.io/cd/) |
+| **SOPS** (21k stars) | Secrets management for config files. Encrypt values in YAML/JSON. | [github.com/getsops/sops](https://github.com/getsops/sops) |
+| **Kestra** (26k stars) | Event-driven orchestration and scheduling. Visual workflow builder. | [kestra.io](https://kestra.io) |
+| **n8n** (185k stars) | Fair-code workflow automation with native AI. Visual Zapier alternative. | [n8n.io](https://n8n.io) |
+
+---
+
+## Self-Hosted Essentials
+
+Tools the Reddit r/selfhosted community (1M+ members) swears by.
+
+| Tool | What It Does | URL |
+|------|-------------|-----|
+| **Immich** (98k stars) | Self-hosted Google Photos replacement. Face recognition, mobile app, sharing. | [immich.app](https://immich.app) |
+| **Uptime Kuma** (85k stars) | Fancy self-hosted monitoring. Beautiful dashboard, notifications. | [github.com/louislam/uptime-kuma](https://github.com/louislam/uptime-kuma) |
+| **Stirling-PDF** (77k stars) | All-in-one PDF toolkit. Merge, split, convert, OCR, watermark. Self-hosted. | [github.com/Stirling-Tools/Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) |
+| **Paperless-NGX** (25k+ stars) | Scan, index, and archive all your physical documents. OCR + tagging. | [docs.paperless-ngx.com](https://docs.paperless-ngx.com) |
+| **Jellyfin** (40k+ stars) | Media server. Plex alternative that is actually free. | [jellyfin.org](https://jellyfin.org) |
+| **Syncthing** (70k+ stars) | P2P file sync. No cloud, no accounts, no limits. | [syncthing.net](https://syncthing.net) |
+| **Home Assistant** (80k+ stars) | Smart home automation hub. Local control, privacy first. | [home-assistant.io](https://www.home-assistant.io) |
+| **Dockge** (16k+ stars) | Simple Docker Compose management UI. By the Uptime Kuma developer. | [github.com/louislam/dockge](https://github.com/louislam/dockge) |
+| **Reactive Resume** (36k stars) | Privacy-first resume builder. No tracking, fully self-hostable. | [rxresu.me](https://rxresu.me) |
+| **TriliumNext** (35k stars) | Personal knowledge base. Notion alternative, self-hosted, hierarchical notes. | [github.com/TriliumNext/Trilium](https://github.com/TriliumNext/Trilium) |
+| **LocalSend** (60k+ stars) | AirDrop for all platforms. Send files to nearby devices over local network. | [localsend.org](https://localsend.org) |
+| **Bitwarden / Vaultwarden** | Password manager. Vaultwarden is the lightweight self-hosted server. | [bitwarden.com](https://bitwarden.com) |
+
+---
+
+## Communication (Self-Hosted)
+
+| Tool | What It Does | URL |
+|------|-------------|-----|
+| **Matrix / Element** | Federated encrypted chat. The #1 community pick for Discord replacement. | [element.io](https://element.io) |
+| **Mattermost** (32k stars) | Open-source Slack alternative. Team chat with channels, threads, integrations. | [mattermost.com](https://mattermost.com) |
+| **Zulip** (22k stars) | Threaded team chat. Best threading model of any chat tool. | [zulip.com](https://zulip.com) |
+| **Mumble** | Open-source voice chat. TeamSpeak alternative, own your voice data. | [mumble.info](https://www.mumble.info) |
+| **Rocket.Chat** (45k stars) | Feature-rich team chat. Self-hostable. Free tier caps at 50 users. | [rocket.chat](https://rocket.chat) |
+
+---
+
+## Backend Platforms
+
+| Tool | What It Does | URL |
+|------|-------------|-----|
+| **Appwrite** (55k stars) | Backend-as-a-service. Auth, database, storage, functions, messaging. Firebase alternative. | [appwrite.io](https://appwrite.io) |
+| **OpenBB** (66k stars) | Financial data platform for analysts, quants, and AI agents. | [openbb.co](https://openbb.co) |
+| **Daytona** (72k stars) | Secure infrastructure for running AI-generated code. Dev environments. | [daytona.io](https://www.daytona.io) |
 
 ---
 

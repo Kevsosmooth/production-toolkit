@@ -40,9 +40,17 @@ Do not start building UI without a defined visual identity. Either:
 - Generate a DESIGN.md using the Google/Stitch format (YAML front matter + prose sections)
 - Reference `awesome-design-md` for real-brand examples to pull inspiration from
 
-### Step 3: Research the niche
+### Step 3: Browse visual galleries
 
-Before designing, look at what competitors in the same industry are doing. A realtor site should not look like a SaaS dashboard. A creative agency should not look like a fintech app. Context matters more than trends.
+Before writing any CSS, open the Visual Galleries section in the README. The workflow:
+
+1. **Study the niche** -- look at competitor sites in the same industry. A realtor site should not look like a SaaS dashboard.
+2. **Browse inspiration** -- Godly, Land-book, Mobbin for overall vibe and layout direction.
+3. **Pick components visually** -- shadcn Blocks, Magic UI, Aceternity UI, 21st.dev for pre-built sections you can see running.
+4. **Customize the theme** -- tweakcn for live visual editing of shadcn themes.
+5. **Then build** -- with the pieces selected, not from imagination.
+
+Context matters more than trends. Show the user visual options before coding.
 
 ---
 
