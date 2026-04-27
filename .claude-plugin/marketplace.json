@@ -1,0 +1,25 @@
+{
+  "name": "production-toolkit",
+  "id": "production-toolkit",
+  "owner": {
+    "name": "Kevsosmooth"
+  },
+  "metadata": {
+    "description": "Visual design galleries, component libraries, DESIGN.md template, and AI build instructions for web projects",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "production-toolkit",
+      "source": "./",
+      "description": "Visual design galleries, component libraries, project scaffolding, and AI build instructions for professional web projects.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kevsosmooth"
+      },
+      "keywords": ["design", "toolkit", "galleries", "components", "templates", "web-design"],
+      "category": "design",
+      "strict": false
+    }
+  ]
+}

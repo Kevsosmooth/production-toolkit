@@ -1,0 +1,10 @@
+{
+  "name": "production-toolkit",
+  "description": "Visual design galleries, component libraries, project scaffolding, and AI build instructions for professional web projects.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kevsosmooth"
+  },
+  "license": "MIT",
+  "keywords": ["design", "toolkit", "galleries", "components", "templates", "web-design"]
+}
