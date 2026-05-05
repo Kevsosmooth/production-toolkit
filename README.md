@@ -261,6 +261,101 @@ Not code -- these are galleries of real shipped websites to study before you sta
 
 ---
 
+## Security and App Hardening
+
+Test your site like an attacker would, before someone else does. Especially important for AI-built apps -- a 2026 audit of 1,764 vibe-coded apps found 7% had wide-open databases, 15% shipped hardcoded API keys, and the majority had IDOR or zero-auth APIs.
+
+This section covers the full pipeline: scan your running site, scan your code, scan your dependencies, scan your secrets, and add runtime protection at the edge. Free or free-tier tools first; commercial only where it earns its place.
+
+### Run-the-Site Scanners (DAST)
+
+Hit your live or staging site like a real attacker. These find what's actually exploitable, not just what's theoretically wrong.
+
+| Tool | Stars | What It Does | URL |
+|------|-------|-------------|-----|
+| **OWASP ZAP** (13.7k stars) | Free, Docker-runnable web app scanner. Baseline scan finds the obvious stuff in 5 minutes. | [zaproxy.org](https://www.zaproxy.org) |
+| **Nuclei** (22k stars) | Template-based scanner from ProjectDiscovery. Massive community library covers CVEs, misconfigs, exposed admin panels. Fast. | [github.com/projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei) |
+| **Caido** (4k stars) | Modern Burp Suite alternative. Free community edition. Rising favorite for manual testing in 2026. | [caido.io](https://caido.io) |
+| **Burp Suite Community** | Still the gold standard for hands-on web app pentesting. Free tier covers most needs. | [portswigger.net/burp](https://portswigger.net/burp) |
+
+### Static Code Analysis (SAST)
+
+Read the code itself, find bugs before they ship. Wire into CI and forget about them until they fire.
+
+| Tool | Stars | What It Does | URL |
+|------|-------|-------------|-----|
+| **Semgrep** (12k stars) | Free, ridiculously fast pattern scanner. Has Next.js, React, TypeScript rulesets that catch XSS, SSRF, unsafe innerHTML. GitHub Action in 5 minutes. | [semgrep.dev](https://semgrep.dev) |
+| **CodeQL** (8.4k stars) | GitHub-native semantic code analysis. Free for public repos. Catches deeper bugs than regex tools. | [codeql.github.com](https://codeql.github.com) |
+| **SonarCloud** (9.7k stars) | Code quality plus security scanner. Solid JS/TS coverage, free tier for OSS. | [sonarsource.com](https://www.sonarsource.com) |
+
+### Dependency and Supply Chain
+
+Your `node_modules` is the attack surface nobody thinks about. These watch it for you.
+
+| Tool | Stars | What It Does | URL |
+|------|-------|-------------|-----|
+| **Socket.dev** | AI-powered npm scanner. Catches malicious packages, typosquats, install-script funny business. Way better than `npm audit`. Free tier. | [socket.dev](https://socket.dev) |
+| **Snyk** (4.4k stars) | Free tier for repo dep scanning plus license checks. Wide ecosystem coverage. | [snyk.io](https://snyk.io) |
+| **OSV-Scanner** (7.6k stars) | Google's CLI dep scanner. No account, runs against `package-lock.json` locally. | [github.com/google/osv-scanner](https://github.com/google/osv-scanner) |
+| **Dependabot** | GitHub-native automatic dep updates plus vuln alerts. Free, just turn it on in repo settings. | [github.com/dependabot](https://github.com/dependabot) |
+
+### Secret Scanning
+
+Before you ship and after every commit -- check that nothing slipped into git history.
+
+| Tool | Stars | What It Does | URL |
+|------|-------|-------------|-----|
+| **TruffleHog** (19k stars) | Scans filesystem and full git history for committed secrets. Docker run and go. | [github.com/trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog) |
+| **Gitleaks** (21k stars) | Fast Go-based secret scanner. Pre-commit hook plus CI in minutes. | [github.com/gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) |
+| **GitGuardian** | Watches future commits across all your repos. Free tier covers individuals and small teams. | [gitguardian.com](https://www.gitguardian.com) |
+
+### AI-Powered Security (The 2026 Wave)
+
+The new generation -- LLM-driven scanners that find multi-step bugs traditional tools miss.
+
+| Tool | Stars | What It Does | URL |
+|------|-------|-------------|-----|
+| **Vulnhuntr** (5k stars) | Open-source LLM-driven SAST that finds multi-step vulns regular scanners miss. From Protect AI. | [github.com/protectai/vulnhuntr](https://github.com/protectai/vulnhuntr) |
+| **PentestGPT** (8k stars) | Open-source LLM-driven pentest assistant. Walks you through reconnaissance and exploitation. | [github.com/GreyDGL/PentestGPT](https://github.com/GreyDGL/PentestGPT) |
+| **HackingBuddyGPT** (1.5k stars) | Academic open-source project that automates basic exploitation chains. | [github.com/ipa-lab/hackingBuddyGPT](https://github.com/ipa-lab/hackingBuddyGPT) |
+| **XBOW** | Autonomous AI pentester. Climbed HackerOne leaderboards in 2025. Commercial, the most-talked-about security tool of the year. | [xbow.com](https://xbow.com) |
+
+### One-Click Web Audits
+
+Do these first -- 5 minutes, immediate letter grade. No install, just paste a URL.
+
+| Tool | What It Does | URL |
+|------|-------------|-----|
+| **securityheaders.com** | Paste URL, get letter grade on CSP, X-Frame-Options, Permissions-Policy. 30 seconds. | [securityheaders.com](https://securityheaders.com) |
+| **Mozilla Observatory** | Broader posture scan with remediation tips. | [observatory.mozilla.org](https://observatory.mozilla.org) |
+| **testssl.sh** | TLS / SSL config audit. CLI, no account needed. | [testssl.sh](https://testssl.sh) |
+| **Hardenize** | Full web posture report including DNS, email auth (SPF/DKIM/DMARC), TLS. | [hardenize.com](https://www.hardenize.com) |
+
+### Runtime Protection (Defense at the Edge)
+
+Stop attacks before they reach your code.
+
+| Tool | What It Does | URL |
+|------|-------------|-----|
+| **Arcjet** | Drop-in security for Next.js -- rate limiting, bot detection, email validation, shield against attacks. Free tier. | [arcjet.com](https://arcjet.com) |
+| **Vercel Firewall** | Built-in WAF on Vercel hosting. OWASP ruleset available, free tier. | [vercel.com/docs/security](https://vercel.com/docs/security) |
+| **Cloudflare WAF** | Industry-standard WAF with managed rule sets. Free tier covers basic protection. | [cloudflare.com/waf](https://www.cloudflare.com/application-services/products/waf/) |
+| **Sentry Security Module** | PII leak detection plus suspicious payload flagging on top of error monitoring. | [sentry.io](https://sentry.io) |
+
+### The Workflow
+
+Stack these in order -- each layer catches what the others miss:
+
+1. **One-click audits first** (securityheaders.com, Mozilla Observatory) -- find quick wins in 5 minutes
+2. **Wire CI scanning** (Semgrep + Dependabot + Gitleaks) -- catch issues on every push
+3. **Run a baseline DAST** (ZAP or Nuclei in Docker) against your staging URL
+4. **Layer runtime protection** (Arcjet + Vercel/Cloudflare WAF) -- block attacks at the edge
+5. **Periodic AI pentest** (Vulnhuntr or PentestGPT) -- catches multi-step bugs CI misses
+
+Run the first two on every project. Run the rest before any production launch and quarterly after.
+
+---
+
 ## Charts and Data Viz
 
 | Tool | What It Does | URL |
