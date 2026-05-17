@@ -4,8 +4,9 @@ description: "Active project scaffolder and design-system tool. Probes the curre
 
 Invoke the production-toolkit:toolkit skill and follow it exactly.
 
-The skill runs five phases in order:
-1. **Probe** -- silent context detection (what's in cwd, siblings, package.json, DESIGN.md, etc.)
+The skill runs six phases in order:
+0. **Target** -- ensure templates are present locally (clone from GitHub if missing); ask which directory to scaffold into so you can run /toolkit from anywhere
+1. **Probe** -- silent context detection in the target directory (what's in cwd, siblings, package.json, DESIGN.md, etc.)
 2. **Present context** -- one-paragraph summary of the situation, user confirms scope
 3. **Interview** -- adaptive multiple-choice questions; skips dimensions the probe already answered
 4. **Preview** -- summary of every file + command that will run, user approves

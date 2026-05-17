@@ -14,7 +14,8 @@ already wired in.
 
 ## Phase flow (always run in order)
 
-1. **Probe** -- silent context detection, no questions
+0. **Target** -- ensure templates are available locally; ask the user which directory to scaffold into
+1. **Probe** -- silent context detection in the target directory, no questions
 2. **Present context** -- one short paragraph summarizing what was found, user confirms scope
 3. **Interview** -- adaptive multiple-choice questions, skipping anything the probe already answered
 4. **Preview** -- write a summary of every file and command that will run, user approves
@@ -25,9 +26,45 @@ problem this skill exists to solve.
 
 ---
 
+## Phase 0: Target directory + template availability
+
+Do two things before any probe.
+
+### 0.1 -- Ensure templates exist locally
+
+The skill reads templates from one of these paths, first that exists wins:
+
+1. `/volume1/playground/dev-tool-docs/production-toolkit/` (source of truth, Kevin's working copy)
+2. `/tmp/production-toolkit/` (clone fallback)
+
+If neither exists, clone the GitHub remote into the fallback path:
+
+```bash
+test -d /volume1/playground/dev-tool-docs/production-toolkit || test -d /tmp/production-toolkit || \
+  git clone https://github.com/Kevsosmooth/production-toolkit.git /tmp/production-toolkit
+```
+
+If the source-of-truth path exists, run `git pull --ff-only` on it (silent; ignore failures) so the templates are current. If only the fallback exists, run `git pull --ff-only` on it for the same reason. Never read templates from `/root/.claude/plugins/marketplaces/production-toolkit/` -- that path is a read-only mirror that gets overwritten on plugin updates.
+
+### 0.2 -- Ask the user where to scaffold
+
+Run `pwd` to get the current shell directory. Then use `AskUserQuestion` with these two options (substitute the real pwd into the first label):
+
+- **This directory: `<pwd>`** -- scaffold into the dir the shell is currently in
+- **A different path** -- user types an absolute path; create the dir if missing
+
+If the user picks "A different path", validate the chosen path:
+- Reject paths inside `/volume1/playground/dev-tool-docs/production-toolkit/` (would create a circular reference)
+- If the path doesn't exist, ask "create it?" before `mkdir -p`
+- If the path is non-empty and contains files unrelated to a scaffold (not just `.git`, `.gitkeep`, or hidden dotfiles), warn before continuing; require explicit "yes overwrite" before any later phase touches a file
+
+Once the target is confirmed, `cd` into it. All subsequent phases operate in the target directory, NOT in the invocation directory.
+
+---
+
 ## Phase 1: Probe
 
-Run these checks silently. Do not narrate. Collect the results into a context object.
+Run these checks silently inside the target directory (the one chosen in Phase 0). Do not narrate. Collect the results into a context object.
 
 ```bash
 pwd
