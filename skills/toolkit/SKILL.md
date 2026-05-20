@@ -213,6 +213,19 @@ If the answer to Q-FONT is "Custom", ask follow-up: "Name the display font and t
 
 If the answer to Q-COMPONENTS is "shadcn/ui", note that the executor must run `npx shadcn@latest init` interactively-or-non-interactively with the picked theme tokens.
 
+## Anti-AI-slop guardrail (read before locking design)
+
+AI builds look like AI because the model defaults to the *statistical average* of its training data (the untouched Tailwind UI look). Before you preview or scaffold any UI, run the design against the full **"How People Spot AI Apps Fast -- The Tell List"** in `AI-INSTRUCTIONS.md`. Three or more tells = it reads as AI-generated. The instant giveaways to refuse by default:
+
+- **Purple/indigo→violet gradients** and any untouched Tailwind palette (`indigo-500`, `blue-500`, `slate-*`). Use the project's own tokens only.
+- **Inter / Roboto / Poppins / system fonts** at default weights. Pick a distinctive display + body pairing.
+- **Three identical rounded cards**, uniform 16px radius, centered single-column symmetry, the hero→3-features→CTA skeleton.
+- **Untouched shadcn defaults**, outline badges (tinted bg + colored text + border), mixed depth strategies, overused glassmorphism.
+- **Vague hero copy** ("Elevate your X", "Build the future"), buzzwords, emoji bullets, lorem ipsum, undraw.co blobs.
+- **Fade-in-up on everything**, linear easing, no empty/loading/error states, no `:focus-visible`.
+
+The fix is always the same: taste lives in the constraints. Lock the tokens + voice in `DESIGN.md` first, then build only from those. If a screen could belong to any product, it is not done.
+
 ## Phase 4: Preview
 
 Once the interview is done, write a structured preview and present it to the user.

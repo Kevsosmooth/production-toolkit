@@ -23,6 +23,69 @@ Every AI-built site looks the same. Developers and designers can spot them insta
 
 ---
 
+## How People Spot AI Apps Fast -- The Tell List (and the Fix)
+
+> Added 2026-05-20 from research (the Tailwind `indigo-500` origin story, "statistical average design," AI-slop design guides) plus field testing. Run a design against this list BEFORE building. Three or more tells and it reads as AI-generated.
+
+**Root cause:** an LLM outputs the *statistical average* of its training data. It has no taste -- it reproduces the single most common pattern across GitHub, Stack Overflow, and tutorials. That pattern is the unmodified Tailwind UI default (Adam Wathan publicly apologized in 2025 for `bg-indigo-500` saturating every AI build). So "AI look" literally equals "untouched popular defaults." The fix never changes: **impose specific taste through tokens and constraints so the model cannot fall back to the average.**
+
+### Color -- the #1 instant tell
+| Tell | Fix |
+|---|---|
+| Purple/indigo→violet gradient (`indigo-500`/`violet-600`), especially on buttons, headings, hero | Pick a non-default brand hue; derive a real ramp; gradients only if intentional and on-brand |
+| Untouched Tailwind palette (`blue-500`, `slate-*`, `gray-*`) | Define your own neutrals + accent as tokens; never ship default Tailwind colors |
+| Accent sprayed everywhere (every button colored) | Primary color on exactly ONE action per viewport |
+| Gradient-clipped text headings (purple→pink) | Solid ink headings; let type and spacing carry the weight |
+| Flat gray "dark mode" (`#1e1e1e`) with no depth | Layered tonal surfaces or a defined shadow scale |
+
+### Typography
+| Tell | Fix |
+|---|---|
+| Inter / Roboto / Poppins / system font at default weights | A distinctive display face + a refined body face (never Inter/Roboto/Arial) |
+| Default letter-spacing on large headings | Tighten display tracking (-0.02 to -0.04em) |
+| One font, 2-3 sizes, no real hierarchy | 6+ deliberate type levels |
+
+### Layout & composition
+| Tell | Fix |
+|---|---|
+| Everything centered, single column, perfectly symmetric | Asymmetry, a real grid, intentional alignment |
+| The exact skeleton: hero → 3 feature cards → testimonial → CTA → footer | Break the template; let content dictate structure |
+| Three identical rounded cards, each an icon in a tinted circle | Vary tile size and weight (bento); earn every block |
+| Uniform 16px radius on everything | A radius scale; nested/continuous radii (outer = inner + padding) |
+
+### Components & depth
+| Tell | Fix |
+|---|---|
+| Untouched shadcn defaults (the "shadcn look") | Re-theme the tokens (tweakcn); change radius, shadow, density |
+| Outline badges: tinted bg + colored text + colored border | Solid filled pills, white text on a saturated background |
+| Mixed depth strategies (shadow + border + tint at once) | Pick ONE depth strategy and apply it consistently |
+| Overused glassmorphism (frosted blur cards) | Exhausted; use solid layered surfaces |
+
+### Motion
+| Tell | Fix |
+|---|---|
+| Fade-in-up on every section (AOS on everything) | 2-3 key moments; one orchestrated, staggered page load |
+| Linear easing, or no motion at all | Spring/ease-out; always respect `prefers-reduced-motion` |
+| Custom cursor blobs, marquees, scroll-hijack | Remove them |
+
+### Copy (reads as AI even when the UI does not)
+| Tell | Fix |
+|---|---|
+| Vague hero ("Elevate your X", "Build the future", "Streamline your workflow") | State exactly what it does and for whom |
+| Buzzwords: seamless, robust, leverage, unlock, supercharge, delve | Concrete nouns and numbers |
+| "It's not just X, it's Y", tricolons, em-dashes everywhere, emoji bullets | Plain specific sentences; no emoji in product copy |
+| Lorem ipsum, fake "as seen in" logos, undraw.co blob art, stock handshakes | Real content, real data, real or intentionally-abstract visuals |
+
+### Content & states (the lazy giveaway)
+| Tell | Fix |
+|---|---|
+| Only the happy path; no empty / loading / error states | Design all of them |
+| Dead buttons, `#` links, no form validation, no focus rings | Everything works; visible `:focus-visible`; real validation |
+
+**The meta-fix, in one line:** define the tokens (color, type, spacing, radius, shadow, motion) and the voice FIRST in `DESIGN.md`, then build only from those. Taste lives in the constraints, not the prompt. If a screen could belong to any product, it is not done.
+
+---
+
 ## Before You Write Any Code
 
 ### Step 1: Read the project files in this order
